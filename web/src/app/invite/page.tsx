@@ -6,6 +6,8 @@ import { Stats } from './stats'
 import { InviteLinkInput } from './invite-link-input'
 
 export default function InvitePage(){
+    const inviteLink = 'http://localhost:3000/invite/18112000'
+
     return (
         <div className="min-h-dvh flex items-center justify-between gap-16 flex-col md:flex-row">
             <div className="flex flex-col gap-10 w-full max0w0[550px]">
@@ -22,7 +24,7 @@ export default function InvitePage(){
                         <p className='text-gray-300'>Convide mais pessoas para o evento e concorra a prêmios exclusivos! É só compartilhar o link abaixo e acompanhar as inscrições:</p>
                     </div>
 
-                    <InviteLinkInput/>
+                    <InviteLinkInput inviteLink={inviteLink}/>
 
                     <Stats />
                 </div>
